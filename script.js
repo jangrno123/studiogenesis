@@ -49,6 +49,16 @@ const countObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.7 });
 document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
 
+const youtubeCards = document.querySelectorAll('.youtube-card');
+if (youtubeCards.length > 1) {
+  let currentYoutubeCard = 0;
+  setInterval(() => {
+    youtubeCards[currentYoutubeCard].classList.remove('is-active');
+    currentYoutubeCard = (currentYoutubeCard + 1) % youtubeCards.length;
+    youtubeCards[currentYoutubeCard].classList.add('is-active');
+  }, 3000);
+}
+
 document.querySelectorAll('[data-project]').forEach(button => {
   button.addEventListener('click', () => {
     modal.querySelector('h2').textContent = button.dataset.project;
