@@ -1,6 +1,6 @@
 # STUDIO GENESIS
 
-AI Animation Studio 공식 웹사이트입니다.
+창세기전 IP를 영상, 애니메이션, 웹툰으로 확장하기 위해 준비 중인 특수목적법인형 미디어 스튜디오, STUDIO GENESIS 공식 웹사이트입니다.
 
 ## GitHub Pages 배포
 
