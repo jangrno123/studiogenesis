@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">STUDIO GENESIS cinematic key visual</title>
+  <desc id="desc">A dark cinematic fantasy-inspired abstract scene with a glowing portal, fractured light, and Genesis emblem motifs.</desc>
+  <defs>
+    <radialGradient id="core" cx="50%" cy="47%" r="46%">
+      <stop offset="0%" stop-color="#f7d383" stop-opacity=".95"/>
+      <stop offset="23%" stop-color="#e3455a" stop-opacity=".68"/>
+      <stop offset="58%" stop-color="#6d2cff" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#06070d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#070913"/>
+      <stop offset="48%" stop-color="#11152a"/>
+      <stop offset="100%" stop-color="#03040a"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f2d391" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff0bb" stop-opacity=".72"/>
+      <stop offset="100%" stop-color="#58c7ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <rect width="1600" height="1100" fill="url(#sky)"/>
+  <rect width="1600" height="1100" fill="#000" opacity=".18"/>
+  <circle cx="800" cy="470" r="520" fill="url(#core)" filter="url(#blur)"/>
+  <g opacity=".38" stroke="#c9d6ff" stroke-width="1">
+    <path d="M120 250 C420 180 630 310 800 210 C980 104 1180 174 1480 120" fill="none"/>
+    <path d="M80 410 C330 290 560 520 790 380 C1030 235 1210 380 1530 260" fill="none"/>
+    <path d="M210 690 C430 560 620 710 800 610 C1010 493 1190 630 1430 510" fill="none"/>
+  </g>
+  <g transform="translate(800 480)">
+    <circle r="245" fill="none" stroke="#f8d889" stroke-width="3" opacity=".5"/>
+    <circle r="186" fill="none" stroke="#9ad9ff" stroke-width="1.5" opacity=".35"/>
+    <path d="M-88 0a88 88 0 1 0 176 0a88 88 0 1 0-176 0" fill="none" stroke="#fff0b9" stroke-width="7" opacity=".88"/>
+    <path d="M-4 -156 L-4 156 M-156 -4 L156 -4" stroke="#fff0b9" stroke-width="2" opacity=".48"/>
+    <path d="M-166 92 L0 -226 L166 92 Z" fill="none" stroke="#ea5468" stroke-width="2" opacity=".5"/>
+  </g>
+  <g filter="url(#soft)" opacity=".82">
+    <path d="M95 730 L760 480" stroke="url(#blade)" stroke-width="5"/>
+    <path d="M1505 245 L840 500" stroke="url(#blade)" stroke-width="4"/>
+    <path d="M310 105 L860 500" stroke="url(#blade)" stroke-width="3"/>
+    <path d="M1290 850 L810 520" stroke="url(#blade)" stroke-width="6"/>
+  </g>
+  <g fill="#02030a">
+    <path d="M0 830 C245 760 355 825 515 780 C685 732 800 820 985 780 C1190 735 1365 780 1600 705 L1600 1100 L0 1100 Z" opacity=".72"/>
+    <path d="M0 920 C230 860 455 930 640 885 C810 846 980 920 1160 872 C1348 822 1478 872 1600 840 L1600 1100 L0 1100 Z"/>
+  </g>
+  <g opacity=".9">
+    <circle cx="390" cy="255" r="3" fill="#fff0c6"/>
+    <circle cx="1210" cy="190" r="2.5" fill="#9ad9ff"/>
+    <circle cx="1030" cy="315" r="2" fill="#fff"/>
+    <circle cx="560" cy="145" r="2" fill="#fff"/>
+    <circle cx="1340" cy="560" r="2" fill="#fff0c6"/>
+    <circle cx="255" cy="525" r="2" fill="#9ad9ff"/>
+  </g>
+  <rect width="1600" height="1100" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="2"/>
+</svg>
