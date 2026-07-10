@@ -19,9 +19,12 @@ button{font:inherit}
 .menu-toggle{display:none;background:none;border:0;width:40px;height:40px}.menu-toggle i{display:block;height:1px;width:24px;background:#fff;margin:7px}
 .mobile-menu{position:fixed;inset:0;background:#0a0b11;z-index:40;display:flex;align-items:center;padding:10vw;opacity:0;visibility:hidden;transition:.35s;color:#fff}.mobile-menu.open{opacity:1;visibility:visible}.mobile-menu nav{width:100%}.mobile-menu a{display:flex;justify-content:space-between;font-size:9vw;font-weight:900;border-bottom:1px solid #333;padding:12px 0}.mobile-menu a span{font:12px "DM Mono";color:var(--coral)}
 .hero{height:100svh;min-height:700px;position:relative;background:#080a13;color:white;overflow:hidden}
-.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.035);animation:heroIn 2s cubic-bezier(.2,.7,.2,1) forwards}
+.hero-video,.hero-image{position:absolute;inset:0;width:100%;height:100%}
+.hero-video{z-index:0;overflow:hidden;pointer-events:none;background:#080a13}
+.hero-video iframe{position:absolute;left:50%;top:50%;width:max(100vw,177.78vh);height:max(56.25vw,100vh);transform:translate(-50%,-50%);border:0;opacity:.9;filter:saturate(1.08) contrast(1.08)}
+.hero-image{object-fit:cover;object-position:center;transform:scale(1.035);animation:heroIn 2s cubic-bezier(.2,.7,.2,1) forwards;opacity:0}
 @keyframes heroIn{to{transform:scale(1)}}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,6,14,.78) 0%,rgba(4,6,14,.2) 42%,rgba(4,6,14,.06) 65%),linear-gradient(0deg,rgba(4,6,14,.58),transparent 45%)}
+.hero-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(4,6,14,.78) 0%,rgba(4,6,14,.2) 42%,rgba(4,6,14,.06) 65%),linear-gradient(0deg,rgba(4,6,14,.58),transparent 45%)}
 .orb{position:absolute;width:400px;height:400px;border-radius:50%;background:var(--violet);filter:blur(120px);opacity:.13;left:-150px;top:18%}
 .hero-copy{position:absolute;left:7vw;top:50%;transform:translateY(-42%);z-index:2}
 .eyebrow,.section-label{font:11px "DM Mono",monospace;letter-spacing:.16em;display:flex;align-items:center;gap:12px}.eyebrow span{display:block;width:30px;height:1px;background:var(--coral)}
