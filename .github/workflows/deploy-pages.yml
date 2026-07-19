@@ -21,23 +21,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-
       - name: Prepare static site
         run: |
           mkdir -p _site
           cp index.html styles.css script.js _site/
           if [ -f CNAME ]; then cp CNAME _site/CNAME; fi
           if [ -d assets ]; then cp -R assets _site/assets; fi
+          if [ -d admin ]; then cp -R admin _site/admin; fi
           touch _site/.nojekyll
-
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
-
   deploy:
     environment:
       name: github-pages
